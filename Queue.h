@@ -48,13 +48,13 @@ public:
 private:
 
     struct Node {
-        Node* next;
+        Node* next = nullptr;
         T value;
     };
 
     Node* head;
     Node* tail;
-
+    int length;
 };
 
 #include "Queue.cpp"
